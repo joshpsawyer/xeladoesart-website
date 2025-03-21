@@ -7,7 +7,7 @@ const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/CNAME");
     eleventyConfig.addPassthroughCopy("./src/robots.txt");
-    eleventyConfig.addPassthroughCopy("./src/images");
+    // eleventyConfig.addPassthroughCopy("./src/images");
     eleventyConfig.addPassthroughCopy("./src/css");
     eleventyConfig.addPassthroughCopy("./src/assets");
     eleventyConfig.addWatchTarget("./src/css/");
@@ -46,7 +46,7 @@ module.exports = function (eleventyConfig) {
       // optional, output image formats
       formats: ['jpg', 'webp'],
       // optional, output image widths
-      widths: ['auto', 400, 800],
+      widths: [400, 800], // 'auto', 
       // optional, attributes assigned on <img> override these values.
       defaultAttributes: {
           loading: 'lazy',

@@ -1,13 +1,8 @@
 {% include "partials/head.njk" %}
 <body>
-  <!-- <input id="color-mode" type="checkbox" name="color-mode">
-   <label for="color-mode">
-    <span class="dark-mode-hide">Dark Mode</span>
-    <span class="light-mode-hide">Light Mode</span>
-  </label> -->
   <div class="color-scheme-wrapper">
     <div id="nav-wrapper">
-      <div id="site-logo-text"><a href="/">/home/joshpsawyer</a></div>
+      <div id="site-logo-text"><a href="/">{{ website.title }}</a></div>
       <div id="header-nav-bar">{% include "partials/navigation.njk" %}</div>
     </div>
     <div id="main-wrapper">
@@ -17,15 +12,10 @@
     </div>
 
     <div id="footer-wrapper">
-      <div class="bottom-line"></div>
-      <div class="bottom-line"></div>
-      <div class="bottom-line"></div>
       <footer>
-        {# <div>{% include "partials/navigation.njk" %}</div> #}
-        {# <br/><a href="/colophon/"> #}
-          (c) 2025 josh sawyer
-        {# </a> #}
-      </footer>
+        <a href="https://twitter.com/xeladoesart">titter</a>
+        <a href="https://www.instagram.com/xeladoesart/">instagram</a>
+        </footer>
     </div>
   </div>
 </body>

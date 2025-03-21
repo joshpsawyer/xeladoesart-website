@@ -4,14 +4,12 @@ pagination:
   size: 1
   alias: tag
 permalink: /{{ tag }}/
-layout: base
+layout: gallery
 ---
-
-<h1>{{ tag }}</h1>
 
 <ul>
 {% set taglist = collections[ tag ]  %}
 {% for post in taglist | reverse %}
-  <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+<li><a href="{{ post.url }}"><img src="{{post.data.image}}" alt="{{ post.data.tite }}"></a></li>
 {% endfor %}
 </ul>
