@@ -1,1 +1,4 @@
-hello
+---
+title: Home
+layout: base
+---

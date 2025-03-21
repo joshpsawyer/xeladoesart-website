@@ -1,7 +1,8 @@
 const { DateTime } = require("luxon");
 const markdownIt = require("markdown-it");
-const markdownItFootnote = require("markdown-it-footnote");
-const markdownItAbbr = require('markdown-it-abbr');
+// const markdownItFootnote = require("markdown-it-footnote");
+// const markdownItAbbr = require('markdown-it-abbr');
+const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 
 module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy("./src/CNAME");
@@ -39,23 +40,38 @@ module.exports = function (eleventyConfig) {
       return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
     });
   
-    let markdownLibrary = markdownIt({
-      html: true,
-      // breaks: true,
-      linkify: true,
-      // typographer: true,
-    })
-    .use(markdownItFootnote)
-    .use(markdownItAbbr);
+    eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+      // which file extensions to process
+      extensions: 'html',
+      // optional, output image formats
+      formats: ['jpg', 'webp'],
+      // optional, output image widths
+      widths: ['auto', 400, 800],
+      // optional, attributes assigned on <img> override these values.
+      defaultAttributes: {
+          loading: 'lazy',
+          sizes: '100vw',
+          decoding: 'async',
+      },
+    });
+  
+    // let markdownLibrary = markdownIt({
+    //   html: true,
+    //   // breaks: true,
+    //   linkify: true,
+    //   // typographer: true,
+    // })
+    // .use(markdownItFootnote)
+    // .use(markdownItAbbr);
 
   
-      markdownLibrary.renderer.rules.footnote_block_open = () => (
-        '<h2 class="mt-3">References</h4>\n' +
-        '<section class="footnotes">\n' +
-        '<ol class="footnotes-list">\n'
-      );
+      // markdownLibrary.renderer.rules.footnote_block_open = () => (
+      //   '<h2 class="mt-3">References</h4>\n' +
+      //   '<section class="footnotes">\n' +
+      //   '<ol class="footnotes-list">\n'
+      // );
       
-      eleventyConfig.setLibrary("md", markdownLibrary);
+      // eleventyConfig.setLibrary("md", markdownLibrary);
   
     // eleventyConfig.addFilter("log", (obj) => {
     //   console.log(obj);

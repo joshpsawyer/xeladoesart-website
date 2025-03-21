@@ -1,0 +1,30 @@
+{% include "partials/head.njk" %}
+<body>
+  <!-- <input id="color-mode" type="checkbox" name="color-mode">
+   <label for="color-mode">
+    <span class="dark-mode-hide">Dark Mode</span>
+    <span class="light-mode-hide">Light Mode</span>
+  </label> -->
+  <div class="color-scheme-wrapper">
+    <div id="nav-wrapper">
+      <div id="site-logo-text"><a href="/">/home/joshpsawyer</a></div>
+      {# <div id="header-nav-bar">{% include "partials/navigation.njk" %}</div> #}
+    </div>
+    <div id="main-wrapper">
+      <main>
+        {{ content | safe }}
+      </main>
+    </div>
+    <div class="bottom-line"></div>
+    <div class="bottom-line"></div>
+    <div class="bottom-line"></div>
+    <div id="footer-wrapper">
+      <footer>
+        {# <br/><a href="/colophon/"> #}
+          (c) 2025 josh sawyer
+        {# </a> #}
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
