@@ -1,6 +1,6 @@
 ---
 title: About
-layout: base
+layout: page
 ---
 
 Liam is a representational artist based in Keynsham, Bristol, focusing on full

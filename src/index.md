@@ -3,15 +3,10 @@ title: Home
 layout: gallery
 ---
 
-
-
-<ul>
+<div id="gallery">
 {%- for post in collections.all -%}
     {%- if post.data.featured == true %}
-    <li>
-        <a href="{{ post.url }}"><img src="{{post.data.image}}" alt="{{ post.data.tite }}"></a>
-    </li>
+    <div><a href="{{ post.url }}"><img src="{{post.data.image}}" alt="{{ post.data.tite }}"></a></div>
     {%- endif -%}
 {%- endfor -%}
-</ul>
-
+</div>

@@ -1,0 +1,18 @@
+---
+layout: base.njk
+---
+
+<div id="main-wrapper" class="page">
+    <main>
+      <img src="{{ image}}" alt="{{ title }}"></a>
+      <h1>{{title}}</h1>
+      <p>{{ medium }}</p>
+      {%- if (available) -%}
+      <p>Available</p>
+      {%- else -%}
+      <p>Sold</p>
+      {%- endif -%}
+
+      {{ content | safe }}
+    </main>
+  </div>

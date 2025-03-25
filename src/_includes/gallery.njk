@@ -2,12 +2,15 @@
 layout: base.njk
 ---
 
-<div>
-    <a href="/">Featured</a>
-    <a href="/paintings/">Paintings</a>
-    <a href="/dry-media/">Dry Media</a>
-    <a href="/digital/">Digital</a>
-    <a href="/sketches/">Sketches</a>
-</div>
-
-{{ content | safe }}
+<div id="main-wrapper" class="gallery">
+    <nav id="sub-nav">
+        <a href="/">Featured</a>
+        <a href="/paintings/">Paintings</a>
+        <a href="/dry-media/">Dry Media</a>
+        <a href="/digital/">Digital</a>
+        <a href="/sketches/">Sketches</a>
+    </nav>
+    <main>
+      {{ content | safe }}
+    </main>
+  </div>

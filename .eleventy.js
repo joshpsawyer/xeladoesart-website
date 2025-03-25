@@ -46,7 +46,7 @@ module.exports = function (eleventyConfig) {
       // optional, output image formats
       formats: ['jpg', 'webp'],
       // optional, output image widths
-      widths: [400, 800], // 'auto', 
+      widths: [400, 800, 1024], // 'auto', 
       // optional, attributes assigned on <img> override these values.
       defaultAttributes: {
           loading: 'lazy',
