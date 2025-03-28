@@ -10,6 +10,6 @@ layout: gallery
 <div id="gallery">
 {% set taglist = collections[ tag ]  %}
 {% for post in taglist | reverse %}
-<div><a href="{{ post.url }}" name="{{ post.tite }}"><img src="{{post.data.image}}" alt="{{ post.tite }}"></a></div>
+<div><a href="{{ post.url }}" name="{{ post.title }}"><img src="{{post.data.image}}" alt="{{ post.title }}"></a></div>
 {% endfor %}
 </div>

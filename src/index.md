@@ -6,7 +6,7 @@ layout: gallery
 <div id="gallery">
 {%- for post in collections.all -%}
     {%- if post.data.featured == true %}
-    <div><a href="{{ post.url }}" name="{{ post.tite }}"><img src="{{post.data.image}}" alt="{{ post.tite }}"></a></div>
+    <div><a href="{{ post.url }}" name="{{ post.title }}"><img src="{{post.data.image}}" alt="{{ post.title }}"></a></div>
     {%- endif -%}
 {%- endfor -%}
 </div>
