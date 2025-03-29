@@ -1,8 +1,8 @@
 ---
-title: Natalie
+title: Daisy in Red
 available: true
 featured: true
-image: /paintings/natalie/20231006_091606-scaled.jpg
+image: /images/Daisy-scaled.jpg
 tags: paintings
 medium: Oil on Aluminium A4
----
+--- 
