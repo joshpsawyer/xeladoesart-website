@@ -8,7 +8,7 @@ content:
     type: collection
     path: 'src/paintings'
     view:
-      fields: [ title, image, date, featured, available ]
+      fields: [ title, image, date, featured, available, tags ]
     fields:
       - name: available
         label: Available?
@@ -30,7 +30,7 @@ content:
       - name: image
         label: Image
         type: image
-      - name: category
+      - name: tags
         label: Category
         type: select
         options:
