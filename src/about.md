@@ -3,6 +3,8 @@ title: About
 layout: page
 ---
 
+<img src="/images/dry-self-portrait-3.jpg" alt="Self portrait of Liam Thomas" id="aboutimage" />
+
 Liam is a representational artist based in Keynsham, Bristol, focusing on full
 body figures and portraits in both oil and charcoal.
 

@@ -139,6 +139,11 @@ img {
   #gallery {
     grid-template-columns: repeat(2, 1fr);
   }
+  img#aboutimage {
+  float: left;
+  max-width: 400px;
+  margin-right: 2rem;
+}
 }
 
 @media (min-width: 766px) {
