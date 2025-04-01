@@ -1,0 +1,44 @@
+media:
+  input: src/images
+  output: /images
+content:
+  - name: paintings
+    label: Paintings
+    type: collection
+    path: 'src/paintings'
+    view:
+      fields: [ title, date, featured, available ]
+    fields:
+      - name: available
+        label: Available?
+        type: boolean
+        default: true
+      - name: featured
+        label: Featured on homepage?
+        type: boolean
+        default: false
+      - name: date
+        label: Date
+        type: date
+      - name: title
+        label: Title
+        type: string
+      - name: body
+        label: Body
+        type: rich-text
+  - name: site
+    label: Site settings
+    path: src/_data/website.json
+    type: file
+    fields:
+      - name: title
+        label: Website title
+        type: string
+      - name: description
+        label: Website description
+        type: string
+        description: Will be provused for any page with no description.
+      - name: cover
+        label: Preview image
+        type: image
+        description: Image used in the social preview on social networks (e.g. Facebook, Twitter...)
