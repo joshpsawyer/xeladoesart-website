@@ -24,6 +24,9 @@ content:
       - name: title
         label: Title
         type: string
+      - name: medium
+        label: Medium
+        type: string
       - name: image
         label: Image
         type: image
