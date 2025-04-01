@@ -30,6 +30,19 @@ content:
       - name: image
         label: Image
         type: image
+      - name: category
+        label: Category
+        type: select
+        options:
+          values:
+            - value: paintings
+              label: Painting
+            - value: digital
+              label: Digital
+            - value: dry-media
+              label: Dry Media
+            - value: sketches
+              label: Sketch
   - name: site
     label: Site settings
     path: src/_data/website.json
