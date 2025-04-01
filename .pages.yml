@@ -21,6 +21,7 @@ content:
       - name: date
         label: Date
         type: date
+        default: 2025-04-01
       - name: title
         label: Title
         type: string
