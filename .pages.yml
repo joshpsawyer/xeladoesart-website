@@ -24,9 +24,6 @@ content:
       - name: title
         label: Title
         type: string
-      - name: body
-        label: Body
-        type: rich-text
       - name: image
         label: Image
         type: image
@@ -67,6 +64,9 @@ content:
       - name: title
         label: Page title
         type: string
+      - name: body
+        label: Body
+        type: rich-text
   - name: contact
     label: Contact
     path: src/contact.md
@@ -75,3 +75,6 @@ content:
       - name: title
         label: Page title
         type: string
+      - name: body
+        label: Body
+        type: rich-text
