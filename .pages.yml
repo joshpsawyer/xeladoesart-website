@@ -30,9 +30,28 @@ content:
     type: collection
     path: 'src/paintings'
     subfolders: true
+    filename: {primary}-{year}-{month}-{day}.md
     view:
       fields: [ title, image, date, featured, available, tags ]
     fields:
+      - name: title
+        label: Title
+        type: string
+      - name: image
+        label: Image
+        type: image
+      - name: medium
+        label: Medium
+        type: string
+      - name: tags
+        label: Category
+        type: select
+        options:
+          values: [paintings, digital, dry-media, sketches] 
+      - name: date
+        label: Date
+        type: date
+        default: 2025-04-01
       - name: available
         label: Available?
         type: boolean
@@ -41,24 +60,6 @@ content:
         label: Featured on homepage?
         type: boolean
         default: false
-      - name: date
-        label: Date
-        type: date
-        default: 2025-04-01
-      - name: title
-        label: Title
-        type: string
-      - name: medium
-        label: Medium
-        type: string
-      - name: image
-        label: Image
-        type: image
-      - name: tags
-        label: Category
-        type: select
-        options:
-          values: [paintings, digital, dry-media, sketches] 
   - name: site
     label: Site settings
     path: src/_data/website.json
