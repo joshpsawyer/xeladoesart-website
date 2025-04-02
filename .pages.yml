@@ -3,6 +3,28 @@ media:
   output: /images
   label: Images
 content:
+  - name: about
+    label: About
+    path: src/about.md
+    type: file
+    fields:
+      - name: title
+        label: Page title
+        type: string
+      - name: body
+        label: Body
+        type: rich-text
+  - name: contact
+    label: Contact
+    path: src/contact.md
+    type: file
+    fields:
+      - name: title
+        label: Page title
+        type: string
+      - name: body
+        label: Body
+        type: rich-text
   - name: paintings
     label: Paintings
     type: collection
@@ -52,25 +74,3 @@ content:
         label: Preview image
         type: image
         description: Image used in the social preview on social networks (e.g. Facebook, Twitter...)
-  - name: about
-    label: About
-    path: src/about.md
-    type: file
-    fields:
-      - name: title
-        label: Page title
-        type: string
-      - name: body
-        label: Body
-        type: rich-text
-  - name: contact
-    label: Contact
-    path: src/contact.md
-    type: file
-    fields:
-      - name: title
-        label: Page title
-        type: string
-      - name: body
-        label: Body
-        type: rich-text
