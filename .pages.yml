@@ -29,6 +29,7 @@ content:
     label: Paintings
     type: collection
     path: 'src/paintings'
+    subfolders: true
     view:
       fields: [ title, image, date, featured, available, tags ]
     fields:
