@@ -28,12 +28,12 @@ content:
       - name: body
         label: Body
         type: rich-text
-  - name: paintings
-    label: Paintings
+  - name: work
+    label: Work
     type: collection
-    path: 'src/paintings'
+    path: 'src/work'
     subfolders: true
-    filename: "{primary}-{year}-{month}-{day}.md"
+    filename: "{primary}.md"
     view:
       fields: [ title, image, date, featured, available, tags ]
     fields:
@@ -49,8 +49,9 @@ content:
       - name: tags
         label: Category
         type: select
+        required: true
         options:
-          values: [paintings, digital, dry-media, sketches] 
+          values: [paintings, digital, dry-media, sketches]
       - name: date
         label: Date
         type: date

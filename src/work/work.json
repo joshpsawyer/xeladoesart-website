@@ -1,0 +1,4 @@
+{
+    "layout": "painting",
+    "permalink": "{{page.filePathStem | removeWorkDir }}/index.html"
+}
