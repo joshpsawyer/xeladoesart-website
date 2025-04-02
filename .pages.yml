@@ -40,12 +40,15 @@ content:
       - name: title
         label: Title
         type: string
+        required: true
       - name: image
         label: Image
         type: image
+        required: true
       - name: medium
         label: Medium
         type: string
+        required: true
       - name: tags
         label: Category
         type: select
@@ -56,6 +59,7 @@ content:
         label: Date
         type: date
         default: 2025-04-01
+        required: true
       - name: available
         label: Available?
         type: boolean
