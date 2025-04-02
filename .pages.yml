@@ -30,7 +30,7 @@ content:
     type: collection
     path: 'src/paintings'
     subfolders: true
-    filename: {primary}-{year}-{month}-{day}.md
+    filename: "{primary}-{year}-{month}-{day}.md"
     view:
       fields: [ title, image, date, featured, available, tags ]
     fields:
