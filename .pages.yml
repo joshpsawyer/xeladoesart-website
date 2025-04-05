@@ -35,7 +35,7 @@ content:
     subfolders: true
     filename: "{primary}.md"
     view:
-      fields: [ title, image, date, featured, available, tags ]
+      fields: [ title, image, featured, available, tags ]
     fields:
       - name: title
         label: Title
@@ -55,11 +55,6 @@ content:
         required: true
         options:
           values: [paintings, digital, dry-media, sketches]
-      - name: date
-        label: Date
-        type: date
-        default: 2025-04-01
-        required: true
       - name: available
         label: Available?
         type: boolean
