@@ -1,0 +1,86 @@
+media:
+  input: src/images
+  output: /images
+  label: Images
+content:
+  - name: about
+    label: About
+    path: src/about.md
+    type: file
+    fields:
+      - name: title
+        label: Page title
+        type: string
+      - name: image
+        label: Image
+        type: image
+      - name: body
+        label: Body
+        type: rich-text
+  - name: contact
+    label: Contact
+    path: src/contact.md
+    type: file
+    fields:
+      - name: title
+        label: Page title
+        type: string
+      - name: body
+        label: Body
+        type: rich-text
+  - name: work
+    label: Work
+    type: collection
+    path: 'src/work'
+    subfolders: true
+    filename: "{primary}.md"
+    view:
+      fields: [ title, image, date, featured, available, tags ]
+    fields:
+      - name: title
+        label: Title
+        type: string
+        required: true
+      - name: image
+        label: Image
+        type: image
+        required: true
+      - name: medium
+        label: Medium
+        type: string
+        required: true
+      - name: tags
+        label: Category
+        type: select
+        required: true
+        options:
+          values: [paintings, digital, dry-media, sketches]
+      - name: date
+        label: Date
+        type: date
+        default: 2025-04-01
+        required: true
+      - name: available
+        label: Available?
+        type: boolean
+        default: true
+      - name: featured
+        label: Featured on homepage?
+        type: boolean
+        default: false
+  - name: site
+    label: Site settings
+    path: src/_data/website.json
+    type: file
+    fields:
+      - name: title
+        label: Website title
+        type: string
+      - name: description
+        label: Website description
+        type: string
+        description: Will be provused for any page with no description.
+      - name: cover
+        label: Preview image
+        type: image
+        description: Image used in the social preview on social networks (e.g. Facebook, Twitter...)
