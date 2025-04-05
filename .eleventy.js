@@ -34,14 +34,18 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addFilter('sortByTitle', values => {
       return values.slice().sort((a, b) => a.data.indexname.localeCompare(b.data.indexname))
     });
+
+    eleventyConfig.addFilter('sortByDate', values => {
+      return values.slice().sort((a, b) => {
+        console.log((b.data.page.date - a.data.page.date) ? "GREATER" : "LESSER")
+        return b.data.page.date - a.data.page.date;
+      })
+    });
   
     eleventyConfig.addCollection("myCollectionName", function (collectionApi) {
       // get unsorted items
+
       return collectionApi.getAll();
-    });
-  
-    eleventyConfig.addFilter("postDate", (dateObj) => {
-      return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
     });
   
     eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
