@@ -3,29 +3,6 @@ media:
   output: /images
   label: Images
 content:
-  - name: user
-    label: User
-    path: src/data/user.json
-    type: file
-    fields:
-      - name: name
-        type: string
-      - name: profession
-        type: string
-      - name: links
-        type: object
-        list: true
-        fields:
-         - name: title
-           type: string
-         - name: description
-           type: string
-         - name: icon
-           description: Icon names can be found at www.remixicon.com
-           type: string
-         - name: url
-           type: string
-           pattern: ^(https?:\/\/)?(www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(\/[^\s]*)?$aml
   - name: about
     label: About
     path: src/about.md
