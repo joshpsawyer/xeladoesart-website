@@ -12,11 +12,6 @@ content:
         type: string
       - name: profession
         type: string
-  - name: links
-    label: Links
-    path: src/data/user.json
-    type: file
-    fields:
       - name: links
         type: object
         list: true
