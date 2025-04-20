@@ -63,6 +63,16 @@ content:
         label: Featured on homepage?
         type: boolean
         default: false
+      - name: writings
+        label: Writings
+        type: reference
+        options:
+          collection: work
+          multiple: true
+          required: false
+          label: "{title} {publication_title} {volume_issue}, {year}"
+          value: "{id}"
+          search: "title"
   - name: site
     label: Site settings
     path: src/_data/website.json
