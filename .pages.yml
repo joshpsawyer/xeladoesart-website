@@ -66,7 +66,6 @@ content:
       - name: date
         label: date (defaults to date created, used for sorting)
         type: date
-        time: true
         default: now
   - name: site
     label: Site settings
