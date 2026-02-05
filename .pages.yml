@@ -63,6 +63,10 @@ content:
         label: Featured on homepage?
         type: boolean
         default: false
+      - name: date
+        label: date (defaults to date created, used for sorting)
+        type: date
+        time: true
   - name: site
     label: Site settings
     path: src/_data/website.json
