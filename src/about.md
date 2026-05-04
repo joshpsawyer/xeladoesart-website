@@ -1,9 +1,7 @@
 ---
 title: About
-layout: about
-image: /images/dry-self-portrait-3.jpg
+image: /images/Polish_20240216_180436961 (1).jpg
 ---
-
 Liam is a representational artist based in Keynsham, Bristol, focusing on full
 body figures and portraits in both oil and charcoal.
 
