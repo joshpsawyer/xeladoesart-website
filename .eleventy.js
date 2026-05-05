@@ -10,6 +10,7 @@ module.exports = function (eleventyConfig) {
     // eleventyConfig.addPassthroughCopy("./src/images");
     eleventyConfig.addPassthroughCopy("./src/css");
     eleventyConfig.addPassthroughCopy("./src/assets");
+    eleventyConfig.addPassthroughCopy("./src/js/embed-substack-rss.js")
     eleventyConfig.addWatchTarget("./src/css/");
     eleventyConfig.setBrowserSyncConfig({
 		  files: './_site/css/**/*.css'
