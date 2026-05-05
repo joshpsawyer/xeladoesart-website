@@ -1,6 +1,7 @@
 ---
 title: About
-image: /images/Polish_20240216_180436961 (1).jpg
+image: /images/Polish_20240216_180436961.jpg
+layout: about
 ---
 Hi I'm Liam, a representational artist based in Wiltshire, with a main focus on figurative art in both oil and charcoal, exploring colour contrasts and the effect of light through the lens of the Human experience. 
 

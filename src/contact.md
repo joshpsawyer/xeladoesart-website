@@ -1,5 +1,6 @@
 ---
 title: Contact
+layout: page
 ---
 Contact me for information regarding purchasing any works that are available on the website
 

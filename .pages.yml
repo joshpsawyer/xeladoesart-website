@@ -17,6 +17,10 @@ content:
       - name: body
         label: Body
         type: rich-text
+      - name: layout
+        label: Layout
+        type: string
+        readonly: true
   - name: contact
     label: Contact
     path: src/contact.md
@@ -28,6 +32,10 @@ content:
       - name: body
         label: Body
         type: rich-text
+      - name: layout
+        label: Layout
+        type: string
+        readonly: true
   - name: work
     label: Work
     type: collection
